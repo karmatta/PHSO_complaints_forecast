@@ -33,3 +33,4 @@ While the Multivariate Prophet model successfully ingested the operational featu
 * **The Verdict:** I elected to deploy the **Univariate Baseline Prophet**. The 0.04% gain did not justify the severe technical debt and pipeline SLA vulnerabilities introduced by creating hard dependencies on upstream HR and operational databases. The baseline model is highly resilient, requires only a date and a target column, and cannot be broken by missing downstream operational feeds.
 
 ![Out-of-Time Model Evaluation Horizon](plots/oot_eval.png)
+
